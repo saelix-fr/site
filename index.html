@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tiny house près de Dijon | Séjour insolite en pleine nature – SAELIX</title>
+<link rel="canonical" href="https://www.saelix.fr/">
+<meta property="og:title" content="SAELIX – Tiny house dans un verger près de Dijon">
+<meta property="og:description" content="Une tiny house construite à la main, nichée dans un verger à 10 minutes de Dijon. Réservez en direct.">
+<meta property="og:url" content="https://www.saelix.fr/">
+<meta property="og:locale" content="fr_FR">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<meta name="description" content="Une tiny house construite à la main, nichée dans un verger à 10 minutes de Dijon. Déconnectez le temps d'une nuit ou d'un week-end. Réservez en direct.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+/* Mise en page : une seule page qui défile, sections pleine largeur alternant clair / vert forêt, contenu centré sur une colonne de lecture. Couleurs = palette 1 Cosa Sei. Polices provisoires en attendant le choix de Laurianne. */
+:root{
+  --foret:#1E4D35; --terracotta:#B85C38; --sable:#C9A97A; --sauge:#7A9E7E; --ardoise:#4A5A5E;
+  --bg:#FAF8F4; --bg-alt:#F1ECE2; --fg:#24302B; --muted:#5B6862; --line:#DDD5C6;
+  --band:#1E4D35; --band-fg:#F4EFE6; --band-muted:#C8D4CB;
+  --accent:#B85C38; --accent-fg:#FFFFFF; --chip:#E7EFE8; --chip-fg:#1E4D35;
+  --todo-bg:#FFF6E0; --todo-fg:#7A5A12;
+  --ph:#DCE5DD; --ph-fg:#4A5A5E;
+  --display:"Jost","Avenir Next","Century Gothic",system-ui,sans-serif;
+  --body:"Lora",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121A16; --bg-alt:#18231D; --fg:#E9E4DA; --muted:#A9B5AD; --line:#2E3B34;
+  --band:#0D2419; --band-fg:#EFE9DD; --band-muted:#A7BBAE;
+  --accent:#D27650; --accent-fg:#1A0F0A; --chip:#21352A; --chip-fg:#CFE3D4;
+  --todo-bg:#3A2F14; --todo-fg:#F1D69A; --ph:#22302A; --ph-fg:#B9C6BD; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121A16; --bg-alt:#18231D; --fg:#E9E4DA; --muted:#A9B5AD; --line:#2E3B34;
+  --band:#0D2419; --band-fg:#EFE9DD; --band-muted:#A7BBAE;
+  --accent:#D27650; --accent-fg:#1A0F0A; --chip:#21352A; --chip-fg:#CFE3D4;
+  --todo-bg:#3A2F14; --todo-fg:#F1D69A; --ph:#22302A; --ph-fg:#B9C6BD; color-scheme:dark}
+
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.65}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);letter-spacing:.01em}
+h3{font-size:1.15rem;font-weight:500}
+p{margin:0}
+.eyebrow{font-family:var(--display);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+.lead{font-size:1.12rem;max-width:62ch;color:var(--muted)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.todo{display:inline-block;background:var(--todo-bg);color:var(--todo-fg);font-family:var(--display);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:.1em .5em;border-radius:3px;vertical-align:middle}
+
+/* En-tête */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:30px;height:28px;flex:none}
+.brand span{font-family:var(--display);font-weight:300;font-size:1.35rem;letter-spacing:.32em}
+nav.links{display:flex;gap:20px;font-family:var(--display);font-size:.92rem}
+nav.links a{text-decoration:none;color:var(--muted)}
+nav.links a:hover{color:var(--fg)}
+.btn{display:inline-block;font-family:var(--display);font-weight:500;font-size:.95rem;letter-spacing:.04em;text-decoration:none;background:var(--accent);color:var(--accent-fg);padding:.7em 1.3em;border-radius:2px;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 1px currentColor}
+@media (max-width:760px){nav.links{display:none}}
+
+/* Accueil */
+.hero{padding-block:56px 64px}
+.hero .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.6rem);font-weight:300;letter-spacing:.005em;margin-block:14px 18px}
+.hero h1 em{font-style:normal;color:var(--foret)}
+:root[data-theme="dark"] .hero h1 em{color:var(--sauge)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .hero h1 em{color:var(--sauge)}}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.ph{background:var(--ph);color:var(--ph-fg);display:grid;place-items:center;text-align:center;font-family:var(--display);font-size:.85rem;letter-spacing:.06em;border-radius:2px;max-width:100%}
+.hero .ph{aspect-ratio:4/5}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;padding:0;list-style:none;font-family:var(--display);font-size:.92rem;color:var(--muted)}
+.facts li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--sauge);margin-right:8px;vertical-align:middle}
+@media (max-width:820px){.hero .grid{grid-template-columns:1fr}.hero .ph{aspect-ratio:16/10}}
+
+section{padding-block:72px}
+section.alt{background:var(--bg-alt)}
+section.band{background:var(--band);color:var(--band-fg)}
+section.band .lead{color:var(--band-muted)}
+section.band .eyebrow{color:var(--sable)}
+.head{display:grid;gap:12px;margin-bottom:36px}
+
+/* La tiny house */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.two > *{min-width:0}
+@media (max-width:820px){.two{grid-template-columns:1fr}}
+dl.equip{display:grid;grid-template-columns:auto 1fr;gap:12px 22px;margin:0}
+dl.equip dt{font-family:var(--display);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:.25em}
+dl.equip dd{margin:0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.gallery .ph{aspect-ratio:1}
+.gallery .ph.wide{grid-column:span 2;aspect-ratio:auto}
+.note{margin-top:22px;border-left:2px solid var(--sauge);padding-left:14px;font-style:italic;color:var(--muted)}
+
+/* Lieu */
+ul.around{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+ul.around li{display:grid;grid-template-columns:5.5em 1fr;gap:12px;align-items:baseline}
+ul.around .dist{font-family:var(--display);font-variant-numeric:tabular-nums;color:var(--sable);font-size:.9rem}
+
+/* Tarifs */
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px}
+.price{border:1px solid var(--line);padding:24px;background:var(--bg)}
+.price .amount{font-family:var(--display);font-weight:300;font-size:2.6rem;font-variant-numeric:tabular-nums;line-height:1;margin-block:10px 6px}
+.price .amount small{font-size:1rem;color:var(--muted)}
+.price p{color:var(--muted);font-size:.95rem}
+table.extras{width:100%;border-collapse:collapse;font-size:.98rem}
+table.extras td{padding:12px 0;border-bottom:1px solid var(--line);vertical-align:top}
+table.extras td:last-child{text-align:right;font-family:var(--display);font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:16px}
+@media (max-width:560px){.prices{grid-template-columns:1fr}}
+
+/* Démarche */
+blockquote{margin:0;font-size:1.25rem;line-height:1.55;max-width:58ch}
+.sign{margin-top:18px;font-family:var(--display);letter-spacing:.08em;color:var(--band-muted)}
+
+/* FAQ */
+details{border-bottom:1px solid var(--line);padding-block:16px}
+summary{cursor:pointer;font-family:var(--display);font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:10px;color:var(--muted);max-width:65ch}
+
+/* Réserver */
+form.booking{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:var(--bg);border:1px solid var(--line);padding:24px}
+form.booking .full{grid-column:1/-1}
+label{display:grid;gap:6px;font-family:var(--display);font-size:.82rem;letter-spacing:.06em;color:var(--muted)}
+input,select,textarea{font:inherit;font-family:var(--body);font-size:1rem;color:var(--fg);background:var(--bg-alt);border:1px solid var(--line);border-radius:2px;padding:.6em .7em;width:100%;box-sizing:border-box;min-width:0}
+textarea{min-height:90px;resize:vertical}
+.booking-card{display:grid;gap:16px;background:var(--bg);border:1px solid var(--line);padding:28px;align-content:start}
+.booking-card p{color:var(--muted)}
+.formmsg{grid-column:1/-1;font-size:.95rem;color:var(--chip-fg);background:var(--chip);padding:12px 14px}
+@media (max-width:560px){form.booking{grid-template-columns:1fr}}
+.contact{display:grid;gap:10px;font-size:1.02rem}
+.copyrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.copyrow code{font-family:var(--display);font-size:1.05rem;background:var(--chip);color:var(--chip-fg);padding:.3em .6em;user-select:all}
+.mini{font-family:var(--display);font-size:.8rem;background:none;border:1px solid var(--line);color:var(--muted);padding:.35em .7em;cursor:pointer;border-radius:2px}
+
+footer{background:var(--band);color:var(--band-muted);padding-block:40px;font-family:var(--display);font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer nav{display:flex;flex-wrap:wrap;gap:16px}
+footer a{color:var(--band-fg);text-decoration:none}
+.proto{background:var(--todo-bg);color:var(--todo-fg);font-family:var(--display);font-size:.82rem;text-align:center;padding-block:8px}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#accueil" aria-label="SAELIX, retour en haut">
+      <svg viewBox="0 0 30 28" aria-hidden="true"><path d="M15 1 L29 27 H1 Z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 20c4-3 9-3 14 0M10.5 15c3-2 6-2 9 0M12.8 10c1.5-1 3-1 4.4 0" fill="none" stroke="var(--sauge)" stroke-width="1.3" stroke-linecap="round"/></svg>
+      <span>SAELIX</span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#tiny">La tiny house</a><a href="#lieu">Le lieu</a><a href="#tarifs">Tarifs</a><a href="#faq">Questions</a>
+    </nav>
+    <a class="btn" href="#reserver">Réserver</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="accueil" style="padding-top:56px">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Tiny house · Plombières-lès-Dijon</p>
+      <h1>Une tiny house dans un verger, <em>à 10 minutes de Dijon</em></h1>
+      <p class="lead">Ralentir, respirer, se reconnecter à l'essentiel. Construite à la main de la première planche à la dernière vis, elle n'a qu'un rôle : vous offrir une vraie pause, le temps d'une nuit ou d'un week-end.</p>
+      <div class="cta">
+        <a class="btn" href="#reserver">Voir les disponibilités</a>
+        <a class="btn ghost" href="#tiny">Découvrir la tiny</a>
+      </div>
+      <ul class="facts">
+        <li>2 adultes + coin cabane enfants</li>
+        <li>Vue sur le verger</li>
+        <li>Sans Wi-Fi, par choix</li>
+        <li>Réservation en direct</li>
+      </ul>
+    </div>
+    <div class="ph" role="img" aria-label="Emplacement de la photo principale">Photo principale<br>tiny house dans le verger, lumière du soir</div>
+  </div>
+</section>
+
+<section class="alt" id="tiny">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">La tiny house</p>
+      <h2>Petite par la taille, grande par l'expérience</h2>
+      <p class="lead">Ossature bois, isolation performante, bardage naturel : chaque centimètre a été pensé pour le confort, et chaque matériau choisi pour sa chaleur.</p>
+    </div>
+    <div class="two">
+      <div>
+        <dl class="equip">
+          <dt>Couchage</dt><dd>Lit double pour 2 adultes en mezzanine haute</dd>
+          <dt>Enfants</dt><dd>Un coin cabane sous la mezzanine basse, le repaire des petits aventuriers</dd>
+          <dt>Cuisine</dt><dd>Bouilloire, cafetière, micro-ondes</dd>
+          <dt>Sanitaires</dt><dd>Toilettes sèches dans la tiny, et salle d'eau privative à quelques pas (douche, WC, vasque) réservée à vos seuls hôtes</dd>
+          <dt>Chauffage</dt><dd>Électrique</dd>
+          <dt>Connexion</dt><dd>Pas de Wi-Fi, volontairement : ici, on se déconnecte pour mieux se retrouver</dd>
+          <dt>Accès</dt><dd>Parking sur place</dd>
+        </dl>
+        
+      </div>
+      <div class="gallery" aria-label="Emplacements des photos">
+        <div class="ph wide">Pièce de vie</div>
+        <div class="ph">Mezzanine</div>
+        <div class="ph">Coin cabane</div>
+        <div class="ph">Détails bois</div>
+        <div class="ph">Petit-déjeuner</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lieu">
+  <div class="wrap two">
+    <div class="head" style="margin:0">
+      <p class="eyebrow">Le lieu</p>
+      <h2>Entre verger et Côte-d'Or</h2>
+      <p class="lead">Le calme de la campagne, la vue sur les arbres fruitiers, le chant des oiseaux au réveil… et Dijon à portée de main quand l'envie vous prend. L'adresse exacte vous est envoyée après la réservation.</p>
+    </div>
+    <ul class="around">
+      <li><span class="dist">10 min</span><span>Dijon, ville d'art et d'histoire, et la Cité internationale de la gastronomie et du vin</span></li>
+      <li><span class="dist">à vélo</span><span>Le canal de Bourgogne et la vallée de l'Ouche</span></li>
+      <li><span class="dist">30 min</span><span>La Route des Grands Crus et les vignobles de la Côte de Nuits</span></li>
+      <li><span class="dist">autour</span><span>Randonnées dans les combes et forêts alentour</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="tarifs">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Tarifs</p>
+      <h2>Une nuit pour deux, en direct</h2>
+      <p class="lead">Réserver ici, c'est plus simple, plus humain, et sans frais de plateforme. Tarifs ajustés selon la saison.</p>
+    </div>
+    <div class="prices">
+      <div class="price"><h3>Du dimanche au jeudi</h3><p class="amount">150 € <small>/ nuit</small></p><p>Pour 2 adultes, prix TTC</p></div>
+      <div class="price"><h3>Vendredi et samedi</h3><p class="amount">170 € <small>/ nuit</small></p><p>Pour 2 adultes, prix TTC</p></div>
+    </div>
+    <h3 style="margin-bottom:6px">Suppléments, avec nos producteurs voisins</h3>
+    <table class="extras">
+      <tr><td>Petit-déjeuner local</td><td>16 € / pers.</td></tr>
+      <tr><td>Panier dîner de producteurs</td><td>26 € / pers.</td></tr>
+          </table>
+  </div>
+</section>
+
+<section class="band" id="demarche">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Notre démarche</p>
+      <h2>Un tourisme local et durable</h2>
+    </div>
+    <blockquote>SAELIX est née d'une envie simple : recréer du lien entre les gens et la Terre. Chaque tiny house est construite à la main, avec des matériaux choisis avec soin, et les suppléments font la part belle aux producteurs du coin. À terme, nous rêvons d'un lieu de vie avec des ateliers pour sensibiliser, transmettre et préserver la biodiversité, une action à la fois.</blockquote>
+    <p class="sign">Simon, fondateur de SAELIX</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Questions fréquentes</p>
+      <h2>Avant de venir</h2>
+    </div>
+    <details><summary>Combien de personnes peuvent dormir dans la tiny house ?</summary><p>Deux adultes en mezzanine haute, et des enfants dans le coin cabane sous la mezzanine basse.</p></details>
+    <details><summary>Y a-t-il une douche et des toilettes ?</summary><p>Oui : des toilettes sèches dans la tiny house, et une salle d'eau privative (douche, WC, vasque) rien que pour vous, à quelques pas.</p></details>
+    <details><summary>Y a-t-il le Wi-Fi ?</summary><p>Non, c'est un choix : la tiny house est faite pour déconnecter.</p></details>
+    <details><summary>Peut-on se garer ?</summary><p>Oui, un parking est prévu sur place.</p></details>
+    <details><summary>Comment annuler ?</summary><p>Écrivez-nous : nous trouvons toujours une solution ensemble.</p></details>
+    </div>
+</section>
+
+<section class="alt" id="reserver">
+  <div class="wrap two">
+    <div class="head" style="margin:0">
+      <p class="eyebrow">Réserver</p>
+      <h2>Réservez votre séjour</h2>
+      <p class="lead">Réservez en direct, sans frais de plateforme. Le calendrier en ligne arrive bientôt.</p>
+      <div class="contact" style="margin-top:20px">
+        <div class="copyrow"><code id="mail">contact@saelix.fr</code><button class="mini" type="button" id="copy">Copier</button></div>
+      </div>
+    </div>
+    <div class="booking-card">
+      <h3>Ouverture prochaine</h3>
+      <p>La tiny house accueille bientôt ses premiers hôtes. Envoyez-nous vos dates souhaitées, le nombre de personnes et vos envies (petit-déjeuner, panier dîner, occasion spéciale) : nous vous répondons sous 24 h.</p>
+      <p><a class="btn" href="mailto:contact@saelix.fr?subject=Demande%20de%20s%C3%A9jour%20-%20tiny%20house%20SAELIX">Écrire à contact@saelix.fr</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>SAELIX Tiny House · SASU au capital de 1 000 € · RCS Dijon 989 114 434 · Plombières-lès-Dijon</span>
+    <nav aria-label="Informations légales"><a href="mentions-legales.html">Mentions légales et confidentialité</a></nav>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copy').addEventListener('click',function(){
+  var b=this,t=document.getElementById('mail');
+  function sel(){var r=document.createRange();r.selectNodeContents(t);var s=getSelection();s.removeAllRanges();s.addRange(r);}
+  try{navigator.clipboard.writeText(t.textContent).then(function(){b.textContent='Copié';},sel);}catch(e){sel();}
+});
+</script>
+
+</body>
+</html>

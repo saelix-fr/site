@@ -150,6 +150,24 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
 footer nav{display:flex;flex-wrap:wrap;gap:16px}
 footer a{color:var(--band-fg);text-decoration:none}
 .proto{background:var(--todo-bg);color:var(--todo-fg);font-family:var(--display);font-size:.82rem;text-align:center;padding-block:8px}
+
+/* Mise en avant projet tiny */
+.hbtns{display:flex;gap:8px;flex:none}
+.btn.proj{color:var(--foret);box-shadow:inset 0 0 0 1.5px var(--foret)}
+.btn.proj .sm{display:none}
+@media (max-width:760px){.btn.proj .lg{display:none}.btn.proj .sm{display:inline}.hbtns .btn{padding:.6em .9em;font-size:.88rem}}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.proj{color:var(--sauge);box-shadow:inset 0 0 0 1.5px var(--sauge)}}
+section.projet{background:var(--terracotta);color:#fff;padding-block:64px}
+section.projet .eyebrow{color:#F6E3D3}
+section.projet h2{color:#fff}
+section.projet .lead{color:#F8EBE1}
+.pcards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.pcard{display:grid;gap:10px;align-content:start;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);padding:24px;text-decoration:none;color:#fff;border-radius:2px;transition:background .2s}
+.pcard:hover{background:rgba(255,255,255,.18)}
+.pcard h3{font-size:1.3rem}
+.pcard p{color:#F8EBE1}
+.pcard span{font-family:var(--display);font-weight:500;letter-spacing:.04em}
+@media (max-width:700px){.pcards{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -161,9 +179,9 @@ footer a{color:var(--band-fg);text-decoration:none}
       <span>SAELIX</span>
     </a>
     <nav class="links" aria-label="Sections">
-      <a href="#tiny">La tiny house</a><a href="#lieu">Le lieu</a><a href="#tarifs">Tarifs</a><a href="#faq">Questions</a><a href="votre-tiny.html">Votre projet tiny</a>
+      <a href="#tiny">La tiny house</a><a href="#lieu">Le lieu</a><a href="#tarifs">Tarifs</a><a href="#faq">Questions</a>
     </nav>
-    <a class="btn" href="#reserver">Réserver</a>
+    <div class="hbtns"><a class="btn ghost proj" href="votre-tiny.html"><span class="lg">Votre projet tiny</span><span class="sm">Votre tiny</span></a><a class="btn" href="#reserver">Réserver</a></div>
   </div>
 </header>
 
@@ -178,6 +196,7 @@ footer a{color:var(--band-fg);text-decoration:none}
         <a class="btn" href="#reserver">Voir les disponibilités</a>
         <a class="btn ghost" href="#tiny">Découvrir la tiny</a>
       </div>
+      <p style="margin-top:18px;font-family:var(--display);font-size:.95rem"><a href="votre-tiny.html" style="color:var(--accent)">Envie de votre propre tiny, ou d'en accueillir une sur votre terrain ? →</a></p>
       <ul class="facts">
         <li>2 adultes + coin cabane enfants</li>
         <li>Vue sur le verger</li>
@@ -216,6 +235,20 @@ footer a{color:var(--band-fg);text-decoration:none}
         <div class="ph">Détails bois</div>
         <div class="ph">Petit-déjeuner</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="projet" id="projet">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Votre projet tiny</p>
+      <h2>Et si la prochaine tiny était chez vous ?</h2>
+      <p class="lead">SAELIX construit ses tiny houses à la main. Vous pouvez en acheter une, ou en accueillir une sur votre terrain : nous l'installons et la faisons vivre.</p>
+    </div>
+    <div class="pcards">
+      <a class="pcard" href="votre-tiny.html#offres"><h3>Acheter votre tiny house</h3><p>Sur mesure, pour y vivre, la louer ou en faire un bureau. Prix sur devis.</p><span>Découvrir →</span></a>
+      <a class="pcard" href="votre-tiny.html#offres"><h3>Accueillir une tiny sur votre terrain</h3><p>Sans investissement : nous installons et gérons tout, vous percevez un revenu.</p><span>Proposer mon terrain →</span></a>
     </div>
   </div>
 </section>
